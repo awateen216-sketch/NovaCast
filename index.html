@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCast - Fire TV</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Custom focus styles for Fire TV remote navigation (Ten-foot UI) */
+        .tv-focusable:focus {
+            outline: none;
+            transform: scale(1.05);
+            border-color: #38bdf8;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+            background-color: #1e293b;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between p-12 select-none">
+
+    <!-- Header / Navbar -->
+    <header class="flex justify-between items-center mb-8">
+        <div class="flex items-center space-x-4 space-x-reverse">
+            <h1 class="text-4xl font-extrabold tracking-wider text-sky-400">NovaCast</h1>
+            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">Fire TV Edition</span>
+        </div>
+        <div class="text-slate-400 text-lg">
+            <span>Live & VOD Streaming</span>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow space-y-8">
+        <!-- Featured Hero Section -->
+        <section class="relative rounded-2xl overflow-hidden border border-slate-800 bg-gradient-to-r from-slate-900 to-slate-950 p-10 shadow-2xl">
+            <div class="max-w-2xl space-y-4">
+                <span class="bg-sky-500/20 text-sky-400 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-widest border border-sky-500/30">Featured Now</span>
+                <h2 class="text-5xl font-black tracking-wide">Cyber Horizon: Code & Steel</h2>
+                <p class="text-slate-400 text-lg leading-relaxed">Experience high-octane cinematic streaming optimized specifically for smart television displays and smooth remote navigation.</p>
+                <div class="pt-4 flex space-x-4 space-x-reverse">
+                    <button tabindex="0" class="tv-focusable bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-8 py-4 rounded-xl text-lg transition-all border-2 border-transparent cursor-pointer">
+                        ▶ Play Now
+                    </button>
+                    <button tabindex="0" class="tv-focusable bg-slate-800 hover:bg-slate-700 text-slate-100 font-bold px-8 py-4 rounded-xl text-lg transition-all border-2 border-slate-700 cursor-pointer">
+                        + Watchlist
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOD Grid Section -->
+        <section>
+            <h3 class="text-2xl font-bold mb-4 text-slate-200">Trending Movies & Series</h3>
+            <div class="grid grid-cols-4 gap-6">
+                <div tabindex="0" class="tv-focusable bg-slate-900 border border-slate-800 rounded-xl p-4 transition-all cursor-pointer">
+                    <div class="bg-slate-800 h-36 rounded-lg mb-4 flex items-center justify-center text-slate-600 font-bold">POSTER 1</div>
+                    <h4 class="font-bold text-lg">Quantum Mechanics</h4>
+                    <p class="text-slate-400 text-sm">Sci-Fi • 4K HDR</p>
+                </div>
+                <div tabindex="0" class="tv-focusable bg-slate-900 border border-slate-800 rounded-xl p-4 transition-all cursor-pointer">
+                    <div class="bg-slate-800 h-36 rounded-lg mb-4 flex items-center justify-center text-slate-600 font-bold">POSTER 2</div>
+                    <h4 class="font-bold text-lg">The Last Protocol</h4>
+                    <p class="text-slate-400 text-sm">Thriller • 4K HDR</p>
+                </div>
+                <div tabindex="0" class="tv-focusable bg-slate-900 border border-slate-800 rounded-xl p-4 transition-all cursor-pointer">
+                    <div class="bg-slate-800 h-36 rounded-lg mb-4 flex items-center justify-center text-slate-600 font-bold">POSTER 3</div>
+                    <h4 class="font-bold text-lg">Neon Echoes</h4>
+                    <p class="text-slate-400 text-sm">Drama • 1080p</p>
+                </div>
+                <div tabindex="0" class="tv-focusable bg-slate-900 border border-slate-800 rounded-xl p-4 transition-all cursor-pointer">
+                    <div class="bg-slate-800 h-36 rounded-lg mb-4 flex items-center justify-center text-slate-600 font-bold">POSTER 4</div>
+                    <h4 class="font-bold text-lg">Shadow Network</h4>
+                    <p class="text-slate-400 text-sm">Action • 4K HDR</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-slate-500 text-sm">
+        <p>NovaCast • Built for Amazon Build, Ship, Shape Hackathon</p>
+    </footer>
+
+</body>
+</html>
